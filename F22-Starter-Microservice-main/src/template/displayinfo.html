@@ -1,0 +1,59 @@
+<html>
+<head><title>NVCC Project Server</title></head>
+<style>
+html{font-family: Helvetica; display:inline-block; margin: 0px auto; text-align: center;}
+h1{color: #0F3376; padding: 2vh;}
+p{font-size: 1.5rem;}
+table, th, td{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: auto;
+}
+td:nth-child(even), th:nth-child(even){
+    background-color: rgb(219, 219, 219);
+}
+.button{
+    display: inline-block; 
+    background-color: #f0c954; 
+    border: none; 
+    border-radius: 4px; 
+    color: white; 
+    padding: 16px 40px; 
+    text-decoration: none; 
+    font-size: 30px; 
+    margin: 2px; 
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+}
+.button:hover{background-color: #cca83b;}
+.button:active{
+    background-color: #a3842a;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+</style>
+<h1><label for="UNI">Search results:</label></h1>
+<table>
+    <tr>
+        <th>GUID</th>
+        <th>LAST NAME</th>
+        <th>FIRST NAME</th>
+        <th>MID NAME</th>
+        <th>EMAIL</th>
+        <th>SCHOOL</th>      
+    </tr>
+    <tr>
+        <td><strong>{{GUID}}</strong></td>
+        <td><strong>{{LASTNAME}}</strong></td>
+        <td><strong>{{FIRSTNAME}}</strong></td>
+        <td><strong>{{MIDNAME}}</strong></td>
+        <td><strong>{{EMAIL}}</strong></td>
+        <td><strong>{{SCHOOL}}</strong></td>
+    </tr>
+</table>
+<p>
+    <a href="/api/students/"><button class="button" type="button">return</button>
+</p>
+</html>
